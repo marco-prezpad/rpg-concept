@@ -1,7 +1,7 @@
 CXX = g++
 CXXFLAGS = -std=c++23 -Wall -g
 
-SOURCES = $(wildcard src/*.cc)
+SOURCES = $(wildcard src/**/*.cc)
 OBJ = $(SOURCES:.cc=.o)
 
 MAIN_FILE = $(shell grep -l "int main" *.cc)
