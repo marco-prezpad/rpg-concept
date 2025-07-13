@@ -11,8 +11,8 @@ CONTROLES:
 
 ARCHIVOS DEL PROYECTO:
 - main.cc         -> Contiene el bucle principal del juego y la ventana
-- personaje.h     -> Declaración de la clase del personaje
-- personaje.cc    -> Lógica del movimiento y dibujo del personaje
+- movimiento.h     -> Declaración de la clase del personaje
+- movimiento.cc    -> Lógica del movimiento y dibujo del personaje
 
 REQUISITOS:
 - Compilador de C++ (como g++)
