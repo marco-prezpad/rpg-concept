@@ -8,7 +8,7 @@ int main() {
   // Crear una instancia del personaje
   Personaje jugador;
 
-  // Bucle del juego
+  // Bucle del juego(while true)
   while (ventana.isOpen()) {
     sf::Event evento;
     // Procesar eventos (como cerrar la ventana)
