@@ -4,7 +4,6 @@
 int main() {
   // Crear la ventana principal (800x600 píxeles)
   sf::RenderWindow ventana(sf::VideoMode(800, 600), "Movimiento WASD");
-  ventana.setFramerateLimit(60); // Limitar FPS para que el movimiento sea estable
 
   // Crear una instancia del personaje
   Personaje jugador;
