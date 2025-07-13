@@ -13,10 +13,10 @@ int main() {
       if (tecla == 'q' || tecla == 'Q') break; // Salir con Q
   
       switch (tecla) {
-        case 'w' || 'W': y++; break; // Arriba
-        case 's' || 'S': y--; break; // Abajo
-        case 'a' || 'A': x--; break; // Izquierda
-        case 'd' || 'D': x++; break; // Derecha
+        case 'w': y++; break; // Arriba
+        case 's': y--; break; // Abajo
+        case 'a': x--; break; // Izquierda
+        case 'd': x++; break; // Derecha
       }
   
       std::cout << "Posicion: (" << x << ", " << y << ")\n";
