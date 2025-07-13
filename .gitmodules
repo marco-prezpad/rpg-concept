@@ -1,0 +1,6 @@
+[submodule "libraries/Eigen"]
+	path = libraries/Eigen
+	url = https://gitlab.com/libeigen/eigen.git
+[submodule "libraries/json"]
+	path = libraries/json
+	url = https://github.com/nlohmann/json.git
