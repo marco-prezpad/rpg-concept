@@ -1,6 +1,6 @@
 #include "bichito.h"
 
-int main() {
+bool TestBichito() {
   // Creamos dos bichitos con stats iniciales
   // Cucaracho Eduardus Supremo: Ataque 12, crítico 30%, defensa 4, vida 50
   Bichito b1("Cucaracho Eduardus Supremo", 12, 0.3f, 4, 50);
@@ -30,5 +30,5 @@ int main() {
   b2.MostrarEstado();
   std::cout << "\n";
 
-  return 0;
+  return true;
 }
