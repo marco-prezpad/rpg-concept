@@ -13,8 +13,8 @@ class Pants {
   void GiveState() const;
   //Give required level
   int RequiredLevel() const { return required_level_; }
-  //Give the statistics of the pants to add them or subtract them to the character
-  std::vector<int> Numbers() const;
+  //Give the statistics of defense to add them or subtract them to the character
+  int Defense() const { return defense_; }
 
  private:
   std::string name_;
