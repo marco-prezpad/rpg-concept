@@ -14,7 +14,13 @@ git config --global push.autoSetupRemote true
 
 ## 2. Clonar el repositorio con submódulos
 
-Para clonar el repositorio incluyendo todos los submódulos, usa:
+Si ya has clonado el repositorio con anterioridad, usa:
+
+```bash
+git submodule update --init --recursive
+````
+
+Si no lo habías clonado, usa:
 
 ```bash
 git clone --recurse-submodules https://github.com/marco-prezpad/rpg-concept
