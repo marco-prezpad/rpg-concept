@@ -17,7 +17,7 @@ git config --global push.autoSetupRemote true
 Para clonar el repositorio incluyendo todos los submódulos, usa:
 
 ```bash
-git clone --recurse-submodules <url-del-repo>
+git clone --recurse-submodules https://github.com/marco-prezpad/rpg-concept
 ````
 
 ## 3. Limpieza y reinstalación de submódulos (Eigen)
