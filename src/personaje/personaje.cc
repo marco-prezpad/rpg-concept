@@ -18,7 +18,7 @@ void Personaje::CheckMenu() {
   }    
 }
 
-void Movimiento::MoverMenu(char tecla, int i) {
+void Personaje::MoverMenu(char tecla, int i) {
   assert(tecla == 'w' || tecla == 's' || tecla == 'x');
   switch (tecla) {
     case 'w': i++; break;

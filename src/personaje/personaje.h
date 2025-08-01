@@ -45,7 +45,7 @@ class Personaje {
   bool CheckCoords();
 
   bool CheckIteration();
-
+  void MoverMenu(char tecla, int i);
   
   bool HasHelmet();
   bool HasChestplate();
