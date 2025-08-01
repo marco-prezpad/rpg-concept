@@ -13,6 +13,7 @@
 **/
 
 #include "attacks.h"
+#include "../personaje/personaje.h"
 
 extern Eigen::MatrixXd weaknesses;
 extern Eigen::MatrixXd strengths;
@@ -23,9 +24,9 @@ extern Eigen::MatrixXd strengths;
  * @param Variant: Bichito or Personaje
  * @return struct with the common stats of the entity
  */
-CommonAttributes& getEntityStats(std::variant<Bichito>& entity) { // Add Personaje to variant
+CommonAttributes& getEntityStats(std::variant<Personaje>& entity) { // Add Bichito to variant
   return std::visit([](auto& ent) -> CommonAttributes& {
-    return ent.getCommonStats();                                        // Personaje and Bichito must have getCommonStats, returning the struct
+    return ent.GetCommonAttributes();                                        // Personaje and Bichito must have getCommonStats, returning the struct
   }, entity);
 }
 
@@ -36,7 +37,7 @@ CommonAttributes& getEntityStats(std::variant<Bichito>& entity) { // Add Persona
  * @param Variant: Attacked Bichito or Personaje
  * @return double, result of the damage
  */
-double Attack::CalculateDamage(std::variant<Bichito>& attacking_entity, std::variant<Bichito>& target_entity) const { 
+double Attack::CalculateDamage(std::variant<Personaje>& attacking_entity, std::variant<Personaje>& target_entity) const { 
   CommonAttributes attacking_entity_attributes = getEntityStats(attacking_entity);
   CommonAttributes attacked_entity_attributes = getEntityStats(target_entity);
   double effectiveness {0.0};
@@ -46,7 +47,7 @@ double Attack::CalculateDamage(std::variant<Bichito>& attacking_entity, std::var
       double weakness = weaknesses(def_type, atk_type);       
       double partial_effectiveness = strength - weakness; 
 
-      effectiveness *= partial_effectiveness; 
+      effectiveness += partial_effectiveness; 
     }
   }
   return 0.0;
