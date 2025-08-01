@@ -8,12 +8,7 @@
 //#include "../coordenadas/coordenadas.h"
 #include "../bichito/bichito.h"
 #include "../battle/attacks.h"
-#include "../equipment/accesory.h"
-#include "../equipment/weapon.h"
-#include "../equipment/helmet.h"
-#include "../equipment/chestplate.h"
-#include "../equipment/pants.h"
-#include "../equipment/boots.h"
+#include "../equipment/equipment_includes.h"
 
 
 /**
